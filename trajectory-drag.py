@@ -41,9 +41,9 @@ x_with_drag, y_with_drag = projectile_motion_with_drag(vx0, vy0, x0, y0, dt, inc
 
 # Plot the results
 plt.figure(figsize=(10, 6),dpi=150)
-plt.plot(x_no_drag, y_no_drag, label="Without Drag", linestyle="--", color="blue")
-plt.plot(x_with_drag, y_with_drag, label="With Drag", color="green")
-plt.title("Projectile Motion of a Golf Ball with and without Drag Force")
+plt.plot(x_no_drag, y_no_drag, label="Idealistic Trajectory", linestyle="--", color="blue")
+plt.plot(x_with_drag, y_with_drag, label="With Drag Force Only", color="green")
+plt.title("Projectile Motion of a Golf Ball: How Drag Affects Trajectory")
 plt.xlabel("x (m)")
 plt.ylabel("y (m)")
 plt.xlim(left=0)

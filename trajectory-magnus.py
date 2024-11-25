@@ -79,7 +79,7 @@ x_drag_magnus, y_drag_magnus = projectile_motion_with_drag_and_magnus(vx0, vy0, 
 plt.figure(figsize=(10, 6), dpi=150)
 plt.plot(x_drag_magnus, y_drag_magnus, label="With Magnus Force only",color="red")
 plt.plot(x_no_drag, y_no_drag, label="Idealistic Trajectory", linestyle="--", color="blue")
-plt.title("Projectile Motion of a Golf Ball")
+plt.title("Projectile Motion of a Golf Ball: How Magnus Force Affects Trajectory")
 plt.xlabel("x (m)")
 plt.ylabel("y (m)")
 plt.legend()

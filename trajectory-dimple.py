@@ -76,12 +76,12 @@ x_no_drag, y_no_drag = projectile_motion_with_height_dependent_drag(vx0, vy0, x0
 
 
 plt.figure(figsize=(10, 6), dpi=150)
-plt.plot(x_no_drag, y_no_drag, label="Idealistic Trajectory", linestyle="--")
-plt.plot(x_drag_magnus, y_drag_magnus, label="Rough Ball with Drag and Magnus Force (with dimple)")
-plt.plot(x_drag_magnus_smooth, y_drag_magnus_smooth, label="Soomth Ball with Drag and Magnus Force")
-plt.title("Projectile Motion of a Golf Ball")
-plt.xlabel("Horizontal Distance (m)")
-plt.ylabel("Vertical Distance (m)")
+plt.plot(x_no_drag, y_no_drag, label="Idealistic Trajectory", linestyle="--",color="blue")
+plt.plot(x_drag_magnus, y_drag_magnus, label="Rough Ball with Drag and Magnus Force (with dimple)",color="green")
+plt.plot(x_drag_magnus_smooth, y_drag_magnus_smooth, label="Soomth Ball with Drag and Magnus Force",color="red")
+plt.title("Projectile Motion of a Golf Ball: How Dimple Affects Trajectory")
+plt.xlabel("x (m)")
+plt.ylabel("y (m)")
 plt.legend()
 plt.grid()
 plt.xlim(left=0)
